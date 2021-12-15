@@ -1,0 +1,17 @@
+#jumbotron{
+  background-image: url(images/jumbotron-bg-image.jpg);
+  background-position: center;
+}
+
+h2{
+  text-shadow: 3px 4px 2px black;
+}
+
+#jumbotron-doge{
+  background-image:url(images/dogecoin-jumbotron.jpeg);
+  background-position: center;
+}
+
+#dogecoin-shadow{
+  text-shadow: 3px 3px 3px black;
+}

@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  background: rgb(46, 72, 121);
+  background: linear-gradient(0deg, rgba(46, 72, 121, 1) 0%, rgba(255, 255, 255, 0.3144608185070903) 100%);
+}
+
+#top-page {
+  display: flex;
+  align-items: center;
+  border: black solid thin;
+  margin: 5px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(81, 186, 171, 0.5382528011204482) 0%, rgba(23, 49, 72, 1) 0%, rgba(117, 77, 129, 1) 49%);
+
+}
+
+#sony-logo {
+  margin-right: 100px;
+  margin-left: 25px;
+}
+
+h1 a:link,
+h1 a:visited {
+  text-decoration: none;
+  color: white;
+  font-size: .4em;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  justify-content: center;
+  /* align-items: stretch; */
+  list-style-type: none;
+  background-color: deepskyblue;
+
+}
+
+.navlink a:link,
+.navlink a:visited {
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.navlink a:hover {
+  background-color: blue;
+}
+
+.aside-link a:link,
+.aside-link a:visited {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+}
+
+.aside-link a:hover {
+  border: outset 5px rgb(64, 17, 73);
+  background-color: rgb(71, 33, 71);
+  padding: 10px;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  border: solid black thin;
+  margin: 5px;
+  padding: 25px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(81, 186, 171, 0.5382528011204482) 0%, rgba(23, 49, 72, 1) 0%, rgba(117, 77, 129, 1) 49%);
+  color: white;
+
+}
+
+li {
+  list-style-type: none;
+}
+
+aside ul {
+  margin: 30px;
+}
+
+.aside-link {
+  padding-top: 30px;
+  font-weight: bold;
+}
+
+#section-content {
+  display: flex;
+  flex-direction: column;
+  border: solid black thin;
+  margin: 5px;
+  padding: 25px;
+  justify-content: space-between;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(81, 186, 171, 0.5382528011204482) 0%, rgba(23, 49, 72, 1) 0%, rgba(117, 77, 129, 1) 49%);
+  color: white;
+
+}
+
+section {
+  padding: 20px;
+}
+
+#image-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+
+  border: black thin solid;
+  margin: 5px;
+}
+
+figure {
+  text-align: center;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+#image-content figure {
+  width: 50%;
+}
+
+.responsive2 {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  padding: 30px;
+}
+
+#headphones {
+  max-width: 200px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 5px;
+  border: black thin solid;
+  background-color: black;
+  color: white;
+
+}
+
+p {
+  line-height: 1.5em;
+}
+
+/***************** Media Query for 600px or more Tablet Portrait *************/
+
+@media screen and (min-width:600px) {
+  #image3 {
+    order: 1;
+  }
+
+  h1 a:link,
+  h1 a:visited {
+    font-size: .6em;
+  }
+
+  #image1,
+  #image2,
+  #image4 {
+    order: 0;
+  }
+}
+
+/***************** Media Query for 900px or more tablet landscape ************/
+
+@media screen and (min-width:900px) {
+  #image2 {
+    order: 1;
+  }
+
+  h1 a:link,
+  h1 a:visited {
+    font-size: 1em;
+  }
+
+  #image1,
+  #image3,
+  #image4 {
+    order: 0;
+  }
+}
+
+/***************** Media Query for 1200px or more is desktop *****************/
+
+@media screen and (min-width:1200px) {
+  #core {
+    display: flex;
+  }
+
+  h1 a:link,
+  h1 a:visited {
+    font-size: 1.5em;
+  }
+
+  aside {
+    order: 1;
+    width: 200%;
+  }
+
+  #navbar {
+    flex-direction: row;
+    border: solid black thin;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .navlink a:link,
+  .navlink a:visited {
+    border: none;
+  }
+
+  .navlink a:hover {
+    border: darkblue 10px outset;
+    padding: 10px;
+  }
+
+  #section-content {
+    flex-direction: row;
+  }
+}
+
+/***************** Media Query for 2500px or more is big desktop *************/
+
+@media screen and (min-width:2500px) {
+  #image1 {
+    order: 1;
+  }
+
+  h1 a:link,
+  h1 a:visited {
+    font-size: 1.7em;
+  }
+
+  #image2,
+  #image3,
+  #image4 {
+    order: 0;
+  }
+}

@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+  <title>Restaurant Landing Page</title>
+  <style>
+    #jumbotron {
+      background-image: url(pasta.jpg);
+      background-position: center;
+      /* background-size: contain;
+      background-repeat: no-repeat; */
+    }
+
+    h1 {
+      text-shadow: 3px 3px 2px black;
+    }
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Anthonino's Taverna</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" target="_blank" href="https://anthoninos.com/menus/?v=7516fd43adaa">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" target="_blank"
+                href="https://www.google.com/maps/place/Anthonino's+Taverna/@38.6143791,-90.2800311,17z/data=!3m1!4b1!4m5!3m4!1s0x87d8b50ba324d919:0x6f715331194ce20b!8m2!3d38.6143314!4d-90.2778506">MapQuest
+                Us</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div id="jumbotron" class="p-5 mb-4 bg-dark rounded-3 container-fluid">
+      <div class="container-fluid py-5">
+        <h1 class="display-1 text-light fw-bold">Anthonino's Taverna</h1>
+        <img class="img-fluid" src="AnthoninosLogo.png" alt="AnthoninosLogo">
+        <button class="btn btn-primary btn-lg" type="button"><a href="tel:+13147734455"
+            class="text-light text-decoration-none">Call Now: (314) 773-4455</a></button>
+        <button class="btn btn-primary btn-lg" type="button"><a href="geo:38.614341698343814,-90.277883563075"
+            class="text-light text-decoration-none">Visit Us! 2225 Macklind Ave, St. Louis, MO 63110</a></button>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <img src="Chicken-Marsala.jpg" class="card-img-top" alt="Chicken Marsala">
+            <div class="card-body">
+              <h5 class="card-title">Chicken Marsala</h5>
+              <p class="card-text">pan fried, breaded, topped with cremini mushrooms, in our sweet marsala sauce</p>
+              <a target="_blank" href="https://anthoninos.com/menus/?v=7516fd43adaa" class="btn btn-primary">$19.99</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <img src="toasted-ravioli.webp" class="card-img-top" alt="Toasted Ravioli">
+            <div class="card-body">
+              <h5 class="card-title">Toasted Ravioli</h5>
+              <p class="card-text">(6) handmade in house, filled with ground beef, ricotta and pecorino romano cheese
+                with marinara. Featured on the Food Network Show Diners, Drive-ins and Dives
+              </p>
+              <a target="_blank" href="https://anthoninos.com/menus/?v=7516fd43adaa" class="btn btn-primary">$12.99</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <img src="chicken-parm.jpg" class="card-img-top" alt="Chicken Parmesan">
+            <div class="card-body">
+              <h5 class="card-title">Chicken Parmesan</h5>
+              <p class="card-text">pan fried served on top of our house marinara, herbed ricotta, and topped with
+                arugula</p>
+              <a target="_blank" href="https://anthoninos.com/menus/?v=7516fd43adaa" class="btn btn-primary">$16.99</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <img src="salmon-filet.jpg" class="card-img-top" alt="Salmon Filet">
+            <div class="card-body">
+              <h5 class="card-title">Salmon Filet</h5>
+              <p class="card-text">(cooked to medium) 2 filets charbroiled served atop a sautéed red pepper, white
+                raisin, and pine nut relish</p>
+              <a target="_blank" href="https://anthoninos.com/menus/?v=7516fd43adaa" class="btn btn-primary">$23.99</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <img src="steak-mudiga.jpg" class="card-img-top" alt="Steak Mudiga">
+            <div class="card-body">
+              <h5 class="card-title">Steak Mudiga</h5>
+              <p class="card-text">breaded filet mignon, charbroiled, served with Volpi prosciutto, melted provolone,
+                covered in a white wine sauce</p>
+              <a target="_blank" href="https://anthoninos.com/menus/?v=7516fd43adaa" class="btn btn-primary">$29.99</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="container-fluid bg-secondary">
+        <h3 class="display-3 text-light">Map</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3117.5000960734264!2d-90.28003108469916!3d38.61437487961538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d8b50ba324d919%3A0x6f715331194ce20b!2sAnthonino&#39;s%20Taverna!5e0!3m2!1sen!2sus!4v1632251490791!5m2!1sen!2sus"
+        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <br>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container-fluid bg-dark">
+      <p class="text-center text-light">&copy; 2021 Anthonino's Taverna</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

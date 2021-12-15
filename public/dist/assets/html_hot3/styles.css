@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* body {
+  overflow-x: hidden;
+} */
+
+
+/* #wrapper{
+  display: flex;
+  flex-direction: column;
+} */
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: lightblue;
+  padding: 10px;
+  width: 96vw;
+}
+
+li {
+  list-style-type: none;
+  padding: 5px;
+}
+
+a:link,
+a:visited {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-size: large;
+}
+
+a:hover{
+  background-color: blue;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+#feature-img {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  order: 0;
+}
+
+#buy-now {
+  order: 1;
+  text-align: center;
+}
+
+#buy-link{
+  display: block;
+  border: black solid 5px;
+  padding: 10px;
+  margin: 10px;
+  background-color: lightblue;
+}
+
+#buy-link a:hover{
+  background-color: blue;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+#top-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#div1,
+#div2,
+#div3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  text-align: center;
+  padding-top: 50px;
+}
+
+#bottom-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#div4,
+#div5,
+#div6,
+#div7 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 50px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  background-color: lightblue;
+  font-size: larger;
+}
+
+/*********** Media Query for Tablet Portrait (600px min) ***********/
+
+
+@media screen and (min-width:600px) {
+  #bottom-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #div4,
+  #div5,
+  #div6,
+  #div7 {
+    width: 40%;
+    margin: 25px;
+  }
+
+  .responsive {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*********** Media Query for Desktop (1200px min) ***********/
+
+@media screen and (min-width:1200px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  ul {
+    flex-direction: row;
+    background-color: lightblue;
+    justify-content: flex-end;
+    margin-top: 10px;
+    width: 79vw;
+  }
+
+  li {
+    padding: 10px;
+  }
+
+
+  h1 {
+    font-size: 4em;
+  }
+
+
+  section {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  #buy-now {
+    order: 0;
+  }
+
+  #feature-img {
+    order: 1;
+  }
+
+  #top-section {
+    flex-direction: row;
+    align-items: center;
+    margin: 50px;
+  }
+
+
+
+  #bottom-section {
+    flex-direction: row;
+    margin: 25px;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
+
+  #div1,
+  #div2,
+  #div3{
+    padding: 30px;
+  }
+
+  #div4,
+  #div5,
+  #div6,
+  #div7 {
+    padding: 20px;
+
+  }
+}
